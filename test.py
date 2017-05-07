@@ -35,7 +35,7 @@ def Chained(val):
 
         collist.append(cList)
         totcoll = []
-
+    print "Valore di m preso:", cc.getM()
     return collist
 
 
@@ -72,5 +72,5 @@ def Iaperto(val):
 
         collist = []
         isp = []
-
+    print "Valore di m preso:", ia.getM()
     return totcoll, totisp

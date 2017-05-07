@@ -55,12 +55,4 @@ class HashC:
         return coll
 
 
-'''
-b = HashC(10)
-b.Cinsert(1)
-b.Cinsert(4)
-b.Cinsert(8)
-b.Cinsert(45)
-b.Cinsert(16)
-b.tostring()
-'''
+

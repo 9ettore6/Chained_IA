@@ -77,18 +77,3 @@ class Hash:
         return self.col
 
 
-'''
-b = Hash(13)
-b.indAinsert(5)
-b.tostring()
-b.indAinsert(8)
-print ""
-b.indAsearch(5)
-print ""
-
-b.indAdelete(5)
-b.tostring()
-b.indAsearch(8)
-b.indAinsert(5)
-b.tostring()
-'''
