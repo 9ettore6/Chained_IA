@@ -34,6 +34,13 @@ class Hash:
         # print h
         return h
 
+    def indAdelete(self, k):
+        b = self.indAsearch(k)
+        if b != None:
+            self.a[b] = "Del"  # carattere speciale per segnalare la cancellazione
+        else:
+            print "Elemento non presente!"
+
     def indAinsert(self, k):
         i = 0
         while i != self.m:
@@ -46,12 +53,6 @@ class Hash:
                 i += 1
                 self.col += 1
         print "Error: Hash table overflow!"
-
-    def getisp(self):
-        return self.arrisp
-
-    def tostring(self):
-        print self.a
 
     def indAsearch(self, k):
         i = 0
@@ -66,14 +67,11 @@ class Hash:
             else:
                 i += 1
 
-    def indAdelete(self, k):
-        b = self.indAsearch(k)
-        if b != None:
-            self.a[b] = "Del"
-        else:
-            print "Elemento non presente!"
+    def getisp(self):
+        return self.arrisp
+
+    def tostring(self):
+        print self.a
 
     def getC(self):
         return self.col
-
-
